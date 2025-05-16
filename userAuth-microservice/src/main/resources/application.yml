@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: userAuth-microservice
+user:
+  management:
+    api:
+      base-url: ${USER_MANAGEMENT_API_BASE_URL}
+server:
+  port: ${SERVER_PORT}
+jwt:
+  secret: ${JWT_SECRET}
+  internal: ${JWT_INTERNAL}
