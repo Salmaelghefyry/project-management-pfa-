@@ -1,6 +1,9 @@
 spring:
   application:
     name: userManagement-microservice
+  cloud:
+    compatibility-verifier:
+      enabled: false
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${DATASOURCE_URL}
@@ -15,3 +18,11 @@ spring:
 jwt:
   secret: ${JWT_SECRET}
   internal: ${JWT_INTERNAL}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true

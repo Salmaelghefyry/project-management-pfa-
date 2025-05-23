@@ -24,6 +24,7 @@ repositories {
 }
 
 dependencies {
+    implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.1.0")
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.6")
     implementation("io.github.cdimascio:java-dotenv:5.2.2")
     implementation("io.jsonwebtoken:jjwt-api:0.11.5")
